@@ -1,0 +1,17 @@
+{% extends 'personal/index.html' %}
+
+{% block content %}
+    <div class="row">
+    {% for project in object_list %}
+            <div class="col-sm-4">
+                <div class="card bg-light mb-3" style="max-width:18rem; border:0px;"></div>
+                <img class="card-img-top" src="{{ project.img.url }}" alt="Card Image" style="height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="{{ project.link }}" class="btn btn-outline-dark" role="button" target="_blank">Check It Out</a>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+{% endblock %}
