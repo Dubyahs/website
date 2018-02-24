@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from personal.models import Project
 
 
 def index(request):
@@ -7,6 +9,11 @@ def index(request):
 
 def about(request):
     return render(request, 'personal/aboutme.html')
+
+
+class ProjectView(ListView):
+    queryset = Project.objects.all().order_by('position')
+    template_name = 'personal/projects.html'
 
 
 def contact(request):
