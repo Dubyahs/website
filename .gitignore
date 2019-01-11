@@ -55,6 +55,8 @@ coverage.xml
 settings-production.py
 settings-dev.py
 secret_settings.py
+media/
+static/
 
 #Text backup files
 *.bak

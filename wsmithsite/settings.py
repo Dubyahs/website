@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['warren.smith4.net']
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'wsmithsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {}
+#DATABASES = {}
 
 
 # Password validation
